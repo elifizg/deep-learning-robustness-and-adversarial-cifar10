@@ -1,0 +1,56 @@
+{
+  "Baseline_linf": {
+    "clean": 0.923046875,
+    "adv": 0.4564453125,
+    "norm": "linf",
+    "epsilon": "4/255",
+    "model": "Baseline"
+  },
+  "Baseline_l2": {
+    "clean": 0.923046875,
+    "adv": 0.7837890625,
+    "norm": "l2",
+    "epsilon": "0.25",
+    "model": "Baseline"
+  },
+  "AugMix_linf": {
+    "clean": 0.938671875,
+    "adv": 0.6240234375,
+    "norm": "linf",
+    "epsilon": "4/255",
+    "model": "AugMix"
+  },
+  "AugMix_l2": {
+    "clean": 0.938671875,
+    "adv": 0.8486328125,
+    "norm": "l2",
+    "epsilon": "0.25",
+    "model": "AugMix"
+  },
+  "transferability_teacher_to_student": {
+    "SimpleCNN (KD, baseline teacher)": {
+      "teacher_adv_acc": 0.4576171875,
+      "student_clean_acc": 0.766796875,
+      "student_transfer_acc": 0.757421875,
+      "transfer_drop": 0.009375000000000022
+    },
+    "SimpleCNN (KD, AugMix teacher)": {
+      "teacher_adv_acc": 0.4568359375,
+      "student_clean_acc": 0.75703125,
+      "student_transfer_acc": 0.7474609375,
+      "transfer_drop": 0.009570312500000067
+    },
+    "MobileNet (KD, baseline teacher)": {
+      "teacher_adv_acc": 0.4568359375,
+      "student_clean_acc": 0.89375,
+      "student_transfer_acc": 0.8556640625,
+      "transfer_drop": 0.0380859375
+    },
+    "MobileNet (KD, AugMix teacher)": {
+      "teacher_adv_acc": 0.4564453125,
+      "student_clean_acc": 0.8892578125,
+      "student_transfer_acc": 0.865625,
+      "transfer_drop": 0.023632812500000044
+    }
+  }
+}
